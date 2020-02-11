@@ -64,7 +64,7 @@ function changeVille() {
   console.log('ville_Id : ' + ville_Id);
 }
 
-
+// Vidage des select.
 
 
 
