@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice METEO - Appel AJAX</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container-fluid border-bottom border-success pb-3">
+  <h1 class="text-center">Tableau de Bord météo</h1>
+</div>
+
+
+<div class="container my-4 py-4 border border-success rounded">
+  <div class="row">
+    <div class="col-6" style="height: 100px">
+      <div class="text-center pt-4">
+        <button type="button" class="btn btn-success" id="btnVille" name="btnVille" onclick="clickVille()">
+          Recupérer la liste des villes
+        </button>
+      </div>
+    </div>
+    <div class="col-6">
+      <label>Villes</label>
+      <form>
+        <select class="custom-select" id="selectVille" name="selectVilleName" onchange="changeVille()" value="">
+
+        </select>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="visuel" >
+  <div class="container border border-success my-4 py-4">
+    <div class="row">
+      <div class="col-12 border-bottom border-success">
+        <h3 id="villeName">Ville</h3>
+        <img src="">
+      </div>
+
+    </div>
+    <div class="row mx-auto text-center pt-3">
+      <div class="col-4 border-rigth" id="temperature">Temperature</div>
+      <div class="col-4" id="VitesseVent">Vitesse du vent</div>
+      <div class="col-4" id="directionVent">Direction du vent</div>
+    </div>
+    <div class="row mx-auto text-center pt-3">
+      <div class="col-4" id="tempValue">Temp</div>
+      <div class="col-4" id="vitesseValue">Vitesse</div>
+      <div class="col-4" id="directionValue">Direct</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="meteo.js"></script>
+
+</body>
+</html>
